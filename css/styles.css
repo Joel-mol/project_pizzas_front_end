@@ -1,4 +1,45 @@
 body {
   background-color: #fff;
 }
-
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
+.green {
+  color: green;
+}
+#header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+#header-container h1 {
+  font-family: "Kalam", cursive;
+  font-size: 32 px;
+  font-style: italic;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+nav ul li a {
+  font-size: 15px;
+  color: #333333;
+  text-decoration: none;
+  padding: 15px;
+  font-family: "Kalam", cursive;
+  font-family: "Oswald", sans-serif;
+}
+nav ul li a:hover {
+  background-color: #e50c39;
+  color: #fff;
+}
