@@ -118,7 +118,6 @@ nav ul li a:hover {
   font-size: 1.25rem;
   font-weight: 600;
   color: #fff;
-  
 }
 footer {
   display: flex;
@@ -128,8 +127,46 @@ footer {
   font-family: "oswald", sans-serif;
   font-weight: bold;
 }
-
-
+footer link {
+  text-align: center;
+  width: 100%;
+}
+.container {
+  font-family: "lato", sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(108, 29, 150, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.form-signin {
+  max-width: 380px;
+  background-color: #fff;
+  border: none;
+  padding: 15px 35px 45px 35px;
+}
+.form-signin-heading {
+  margin-bottom: 30px;
+}
+input[type="text"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background: #007bff;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
 @media (max-width: 960px) {
   #header-container {
     flex-direction: column;

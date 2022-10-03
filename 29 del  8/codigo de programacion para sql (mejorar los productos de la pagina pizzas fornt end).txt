@@ -1,0 +1,1 @@
+select p.products_name, p.price,date_format(p.start_date'%d/%m/%Y'), p.image, c.category_name from products p inner join categories c on c.id_category=p.id_category;

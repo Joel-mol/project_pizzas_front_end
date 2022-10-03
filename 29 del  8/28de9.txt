@@ -1,0 +1,1 @@
+$sql='insert into products (product_name,image,price,id_category) values (":product,,:price,:category")';

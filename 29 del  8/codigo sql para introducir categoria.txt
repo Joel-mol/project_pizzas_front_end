@@ -1,0 +1,3 @@
+codigo sql 26/9/22
+SELECT id_category,category_name from categories order by category_name
+insert  into categories (category_name) values ('*categoria*');

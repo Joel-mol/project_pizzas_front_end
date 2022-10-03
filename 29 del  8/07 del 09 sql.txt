@@ -1,0 +1,4 @@
+alter table products add column description varchar (100);
+
+update products set descrription= "18 unidades, incluyen dip bbq"
+where id_product=8;

@@ -1,0 +1,43 @@
+ALTER TABLE
+ADD CONSTRAINT products_categories FOREIGN KEY (id_category) REFERENCES categories (id_category);
+
+
+
+insert into categories (category_name) values
+('pizzas');
+
+
+
+insert into categories (category_name) values
+('hamburguesas');
+
+
+select * from categories;
+
+
+
+select count (*) from categories;
+
+
+
+
+insert into products (id_category,image,price,product_name) values
+(1,'images/morrones.jpg',1400,'espeial morrones'),
+(1,'images/napolitana.jpg',1200,'especial napólitana'),
+(1,'images/morrones.jpg',1550,'mixta calabresa y tomates'),
+(1,'images/morrones.jpg',1370,'especial de tomates'),
+(1,'images/fugaza.jpg',1250,'especial fugaza'),
+(1,'images/especial.jpg',1250,'especial primavera');
+
+
+
+
+update products set price=price+200 where id_product=2;
+
+
+/*falta el codigo de abajo*/
+select p.product_name, p.price,date_format(p.start_date'%d/%m/%Y'), p.image, c.category_name from products p inner join categories c on c.id_category=p.id_category;
+
+
+
+	
